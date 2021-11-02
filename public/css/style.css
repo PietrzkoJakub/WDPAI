@@ -1,48 +1,34 @@
 body {
-    color: blue;
+    margin: 0%;
+    color: black;
     display: flex;
     flex-direction: row;
 }
 
-body, h1 {
-    margin: 0;
-}
-
-.logo {
-    background-color: cornsilk;
-}
-
-.login-form {
-    background-color: blue;
-}
-
-.logo, .login-form {
+.container {
+    width: 100vw;
     height: 100vh;
-    width: 100%;
+    background: black; 
+    
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+
+.logo{
+    width: 50%;
+    text-align: center;
 }
 
-@media screen and (max-device-width:411px), screen and (max-width:411px)
-{
+.login-container{
+    width: 50%;
+}
 
-    body{
-        flex-direction: column;
-    }
-
-    .logo{
-        height: 20hv;
-
-    }
-
-    .login-form{
-        height: 80vh;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
